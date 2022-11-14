@@ -16,7 +16,7 @@
 extern int button_flag[3];
 
 void getKeyInput();
-void subKeyProcess();
+//void subKeyProcess();
 
 
 #endif /* INC_BUTTON_H_ */

@@ -12,10 +12,10 @@ int TimeOutForKeyPress[3] = {500,70,500};
 int turn = 0;
 int button_flag[3] = {0,0,0};
 
-void subKeyProcess(){
-	//TODO
-	button_flag[0] = 1;
-}
+//void subKeyProcess(){
+//	//TODO
+//	button_flag[0] = 1;
+//}
 
 void getKeyInput(){
 	for(int i = 0;i<3;i++){
@@ -35,7 +35,7 @@ void getKeyInput(){
 			  KeyReg3[i] = KeyReg2[i];
 
 			  if (KeyReg3[i] == PRESSED_STATE){
-				if(i == 1) TimeOutForKeyPress[i] = 70;
+				if(i == 1) TimeOutForKeyPress[i] = 70; //use to have button_flag[1] every 700ms for pressed button 1
 				button_flag[i] = 1;
 			  }
 			  else{
